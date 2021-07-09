@@ -1,0 +1,3 @@
+#Fake Blog Site For coding bootcamp HTML assignment
+
+I got a little carried away with CSS and layout...
