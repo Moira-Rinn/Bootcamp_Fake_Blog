@@ -1,0 +1,330 @@
+:root {
+  --primary-color: #f5f5dc;
+  --secondary-color: #25221e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: 'Times New Roman', Times, serif;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color: var(--primary-color);
+  margin: auto 15px;
+  padding: 0 10px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.title-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px 10px;
+}
+
+.title {
+  border: 2px solid var(--primary-color);
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+}
+
+.title a {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 35px;
+  border: none;
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+nav form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  margin: auto 15px;
+  padding: 5px;
+}
+
+form input,
+form select,
+option {
+  width: 300px;
+  height: 40px;
+  background-color: 2px solid var(--secondary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  margin: auto 15px;
+}
+
+form input:focus {
+  outline: none;
+  color: var(--primary-color);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+form input::placeholder {
+  color: var(--primary-color);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+form label {
+  color: var(--primary-color);
+  font-size: 24px;
+  padding: 5px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  margin: auto 15px;
+  background-color: var(--secondary-color);
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blog {
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog img {
+  border: 10px solid var(--secondary-color);
+  border-radius: 10px;
+  display: flex;
+  margin: 60px auto 5px auto;
+  max-width: 45em;
+  max-height: 30em;
+}
+
+.container {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.container a {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  font-size: 16px;
+}
+
+.container h5 {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0.5rem;
+}
+
+.container span {
+  margin: 0 5px;
+}
+
+.post {
+  margin: 15px 5px;
+}
+aside {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  position: fixed;
+  margin: 60px 30px 10px 10px;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside ul li {
+  margin: 10px;
+}
+
+.aside-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  padding: 20px;
+}
+
+footer {
+  position: relative;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.register,
+.survey {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+select option {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 1300px) {
+  header {
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  header nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav a {
+    margin: 5px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+  }
+
+  form label {
+    font-size: 24px;
+    padding: 5px;
+  }
+
+  .btn {
+    margin: 15px 5px;
+  }
+
+  .title-block {
+    position: relative;
+    display: block;
+  }
+
+  .title {
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    margin-top: 1em;
+  }
+  .subtitle {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  main img {
+    max-width: 15em;
+    max-height: 20em;
+  }
+
+  main h1 {
+    font-size: 20px;
+  }
+
+  footer {
+    height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer h3 {
+    display: block;
+  }
+}

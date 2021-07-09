@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+      integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Sacha's Blog</title>
+  </head>
+  <body>
+    <!-- Header and Nav... -->
+
+    <header>
+      <div class="title-block">
+        <div class="title">
+          <h1><a href="">Welcome to Sacha's Blog</a></h1>
+        </div>
+        <div class="subtitle">
+          <h2>Please Enjoy Your Stay</h2>
+        </div>
+      </div>
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">FAQ</a>
+        <form id="search-form">
+          <label for="search"><i class="fas fa-search"></i></label>
+          <input
+            type="text"
+            id="search"
+            placeholder="What are you wondering?"
+          />
+          <button class="btn">Search</button>
+        </form>
+      </nav>
+    </header>
+
+    <!-- Main body of the blog... -->
+
+    <main>
+      <div class="blog">
+        <img
+          src="/img/me.jpg"
+          alt="Oops, you can't see me"
+          style="max-width: 45em; max-height: 30em"
+        />
+        <!-- image style for HTML code only, styled in CSS -->
+
+        <!-- Today's Post... -->
+
+        <div class="container">
+          <h1>
+            Today's Post: <span id="todayPost">Creating A Blog Mockup...</span>
+          </h1>
+          <img
+            src="img/blog_html.jpg"
+            alt="Oops, I'm sure it was an interesting pic..."
+            style="max-width: 45em; max-height: 30em"
+          />
+          <!-- image style for HTML code only, styled in CSS -->
+
+          <h2 class="todays-post-title">Fabulously Interesting Content...</h2>
+          <h5>
+            <span id="todays-post-date">Date: dynamic date </span>Author:
+            <a href="#">Sacha Moira</a>
+          </h5>
+          <p class="post">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            provident vitae nemo tenetur nostrum error ea minima perferendis.
+            Totam sequi error porro laboriosam aliquam. Magni facere eaque ad
+            nisi tempora earum voluptas necessitatibus vitae, voluptates eveniet
+            quos repudiandae quia fugit, error accusamus? Id, ratione nisi!
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            provident vitae nemo tenetur nostrum error ea minima perferendis.
+            Totam sequi error porro laboriosam aliquam. Magni facere eaque ad
+            nisi tempora earum voluptas necessitatibus vitae, voluptates eveniet
+            quos repudiandae quia fugit, error accusamus? Id, ratione nisi!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            provident vitae nemo tenetur nostrum error ea minima perferendis.
+            Totam sequi error porro laboriosam aliquam. Magni facere eaque ad
+            nisi tempora earum voluptas necessitatibus vitae, voluptates eveniet
+            quos repudiandae quia fugit, error accusamus? Id, ratione nisi!
+            <br />
+            <img
+              src="img/blog_css.jpg"
+              alt="Revelant image to whatever I'm babbling about today..."
+              style="max-width: 45em; max-height: 30em"
+            />
+            <!-- image style for HTML code only, styled in CSS -->
+
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            provident vitae nemo tenetur nostrum error ea minima perferendis.
+            Totam sequi error porro laboriosam aliquam. Magni facere eaque ad
+            nisi tempora earum voluptas necessitatibus vitae, voluptates eveniet
+            quos repudiandae quia fugit, error accusamus? Id, ratione nisi!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            provident vitae nemo tenetur nostrum error ea minima perferendis.
+          </p>
+
+          <!-- Completely Unrelated Table... -->
+
+          <table>
+            <thead>
+              <tr>
+                <th>Cell 1 in thead row</th>
+                <th>Cell 2 in thead row</th>
+                <th>Cell 3 in thead row</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>__________________</td>
+                <td>__________________</td>
+                <td>__________________</td>
+              </tr>
+              <tr>
+                <td>Cell 1 in row 1 tbody</td>
+                <td>Cell 2 in row 1 tbody</td>
+                <td>Cell 3 in row 1 tbody</td>
+              </tr>
+              <tr>
+                <td>__________________</td>
+                <td>__________________</td>
+                <td>__________________</td>
+              </tr>
+              <tr>
+                <td>Cell 1 in row 2 tbody</td>
+                <td>Cell 2 in row 2 tbody</td>
+                <td>Cell 3 in row 2 tbody</td>
+              </tr>
+              <tr>
+                <td>__________________</td>
+                <td>__________________</td>
+                <td>__________________</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Yesterday's Post... -->
+
+          <a href="#">...Read More</a>
+        </div>
+        <div class="container">
+          <h1>
+            Yesterday's Post:
+            <span id="yester-post">A Walk in the Woods...</span>
+          </h1>
+          <img
+            src="img/Oak_tree.jpg"
+            alt="Oops, I'm sure it was something interesting..."
+            style="max-width: 45em; max-height: 30em"
+          />
+          <!-- image style for HTML code only, styled in CSS -->
+
+          <h2 class="todays-post-title">Fabulously Interesting Content...</h2>
+          <h5>
+            <span id="yester-post-date">Date: ((dynamic date)) </span>Author:
+            <a href="#">Sacha Moira</a>
+          </h5>
+          <p class="post">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            provident vitae nemo tenetur nostrum error ea minima perferendis.
+            Totam sequi error porro laboriosam aliquam. Magni facere eaque ad
+            nisi tempora earum voluptas necessitatibus vitae, voluptates eveniet
+            quos repudiandae quia fugit, error accusamus? Id, ratione nisi!
+            Accusantium provident vitae nemo tenetur nostrum error ea minima
+            perferendis. Totam sequi error porro laboriosam aliquam. Magni
+            facere eaque ad nisi tempora earum voluptas necessitatibus vitae,
+            voluptates eveniet quos repudiandae quia fugit, error accusamus? Id,
+            ratione nisi!
+            <br />
+            <img
+              src="img/Peach_blossom.jpg"
+              alt="Revelant image to whatever I'm babbling about today..."
+              style="max-width: 45em; max-height: 30em"
+            />
+            <!-- image style for HTML code only, styled in CSS -->
+
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            provident vitae nemo tenetur nostrum error ea minima perferendis.
+            Totam sequi error porro laboriosam aliquam. Magni facere eaque ad
+            nisi tempora earum voluptas necessitatibus vitae, voluptates eveniet
+            quos repudiandae quia fugit, error accusamus? Id, ratione nisi!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            provident vitae nemo tenetur nostrum error ea minima perferendis.
+            Totam sequi error porro laboriosam aliquam. Magni facere eaque ad
+            nisi tempora earum voluptas necessitatibus vitae, voluptates eveniet
+            quos repudiandae quia fugit, error accusamus? Id, ratione nisi!
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            provident vitae nemo tenetur nostrum error ea minima perferendis.
+            Totam sequi error porro laboriosam aliquam. Magni facere eaque ad
+            nisi tempora earum voluptas necessitatibus vitae, voluptates eveniet
+            quos repudiandae quia fugit, error accusamus? Id, ratione nisi!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            provident vitae nemo tenetur nostrum error ea minima perferendis.
+          </p>
+          <a href="#">...Read More</a>
+        </div>
+
+        <!-- Registration Form... -->
+
+        <div class="register">
+          <form id="new-account">
+            <h3>Create an Account:</h3>
+            <label for="name"><i class="far fa-user-circle"></i></label>
+            <input type="text" id="name" placeholder="What's your name?" />
+            <label for="email"><i class="far fa-envelope-open"></i></label>
+            <input type="email" id="email" placeholder="What's your email?" />
+            <label for="phone"><i class="fas fa-phone"></i></label>
+            <input type="text" id="phone" placeholder="What's your number?" />
+            <label for="gender"><i class="fas fa-venus-mars"></i></label>
+            <select name="gender" id="gender">
+              <option value="Woman">Woman</option>
+              <option value="Man">Man</option>
+              <option value="Non-Binary" selected>Non-Binary</option>
+              <option value="Agendered">Agendered</option>
+              <option value="Fluid">Fluid</option>
+            </select>
+            <label for="password"><i class="fas fa-unlock"></i></label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Create a password..."
+            />
+            <button class="btn">Submit</button>
+          </form>
+        </div>
+
+        <!-- Survey Form... -->
+
+        <div class="survey">
+          <form id="review">
+            <h3>What Do You Think?:</h3>
+            <p>Do you like our content?</p>
+            <select name="content-rating" id="survey-content">
+              <option value="great">Great!!!!</option>
+              <option value="good">Good!!!</option>
+              <option value="okay">Okay!!</option>
+              <option value="alright">Alright!</option>
+              <option value="meh">Meh</option>
+              <option value="ugh">Ugh</option>
+            </select>
+            <p>Things you like about our site:</p>
+            <input
+              type="checkbox"
+              id="content-chk"
+              name="like-chk"
+              value="content"
+            />
+            <label for="content-chk">Content</label>
+            <input
+              type="checkbox"
+              id="aesthetic-chk"
+              name="like-chk"
+              value="aesthetic"
+            />
+            <label for="aesthetic-chk">Aesthetic</label>
+            <input
+              type="checkbox"
+              id="design-chk"
+              name="like-chk"
+              value="design"
+            />
+            <label for="design-chk">Design</label>
+            <p>Will You Return?</p>
+            <input
+              type="radio"
+              id="returning"
+              name="return"
+              value="returning"
+            />
+            <label for="returning">Absolutely!!!</label>
+            <input
+              type="radio"
+              id="wont-return"
+              name="return"
+              value="wont-return"
+            />
+            <label for="sur-submit">Never Ever!!!</label>
+            <input type="submit" name="submit" id="sur-submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Side nav for larger screens... -->
+
+    <aside class="recent-content">
+      <div class="recent-posts">
+        <h3 class="aside-title">Recent Posts</h3>
+        <ul class="recent-post-link">
+          <li><a href="#" class="post-title">Post To Be Udated In JS</a></li>
+          <li><a href="#" class="post-title">Post To Be Udated In JS</a></li>
+          <li><a href="#" class="post-title">Post To Be Udated In JS</a></li>
+          <li><a href="#" class="post-title">Post To Be Udated In JS</a></li>
+        </ul>
+      </div>
+      <div class="archived-posts">
+        <h3 class="aside-title">Archived</h3>
+        <ul class="recent-post-link">
+          <li><a href="#" class="post-title">Post To Be Udated In JS</a></li>
+          <li><a href="#" class="post-title">Post To Be Udated In JS</a></li>
+          <li><a href="#" class="post-title">Post To Be Udated In JS</a></li>
+          <li><a href="#" class="post-title">Post To Be Udated In JS</a></li>
+        </ul>
+      </div>
+      <div class="previously-viewed">
+        <h3 class="aside-title">Recently Viewed</h3>
+        <ul class="recent-post-link">
+          <li><a href="#" class="post-title">Post To Be Udated In JS</a></li>
+          <li><a href="#" class="post-title">Post To Be Udated In JS</a></li>
+          <li><a href="#" class="post-title">Post To Be Udated In JS</a></li>
+          <li><a href="#" class="post-title">Post To Be Udated In JS</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+
+    <footer>
+      <h3>&copy; copyright Sacha Moira date</h3>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
