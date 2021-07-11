@@ -12,32 +12,23 @@
 body {
   background-color: var(--primary-color);
   font-family: 'Times New Roman', Times, serif;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  overflow: auto;
 }
 
 header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
+  height: 50px;
   color: var(--primary-color);
   background-color: var(--secondary-color);
-  width: 100%;
-  height: 50px;
+  margin-bottom: 10px;
 }
 
 a {
   text-decoration: none;
   font-size: 24px;
   color: var(--primary-color);
-  margin: auto 15px;
-  padding: 0 10px;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
+  padding: 0 10px;
+  margin: auto 15px;
 }
 
 .title-block {
@@ -54,41 +45,26 @@ a {
 }
 
 .title a {
-  display: flex;
-  align-items: center;
-  justify-content: left;
   font-size: 35px;
   border: none;
   margin: 0;
 }
 
 .subtitle {
+  display: flex;
+  justify-content: right;
   color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
   border-top: none;
   border-radius: 0 0 5px 5px;
   padding-top: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: right;
 }
 
 nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-
-nav form {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: right;
-  margin: auto 15px;
-  padding: 5px;
 }
 
 form input,
@@ -96,6 +72,7 @@ form select,
 option {
   width: 300px;
   height: 40px;
+  color: var(--primary-color);
   background-color: 2px solid var(--secondary-color);
   border: 2px solid var(--primary-color);
   border-radius: 5px;
@@ -118,48 +95,54 @@ form input::placeholder {
   font-weight: 700;
 }
 
-form label {
+nav form label {
   color: var(--primary-color);
   font-size: 24px;
-  padding: 5px;
 }
 
 .btn {
   width: 100px;
   height: 40px;
-  margin: auto 15px;
+  color: var(--primary-color);
   background-color: var(--secondary-color);
   font-size: 24px;
   font-family: 'Times New Roman', Times, serif;
-  color: var(--primary-color);
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   cursor: pointer;
+  margin: 5px;
 }
 
-.blog {
-  max-width: 75%;
+.register .btn {
+  display: block;
+  margin: 15px auto;
+}
+
+.register label,
+.survey label {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.blog {
+  max-width: 75%;
+}
+
 .blog img {
+  display: flex;
+  max-height: 30em;
   border: 10px solid var(--secondary-color);
   border-radius: 10px;
-  display: flex;
   margin: 60px auto 5px auto;
-  max-width: 45em;
-  max-height: 30em;
 }
 
 .container {
-  padding: 10px;
-  margin: 10px;
+  font-size: 20px;
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
-  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .container a {
@@ -172,10 +155,6 @@ form label {
   color: var(--primary-color);
   background-color: var(--secondary-color);
   font-size: 16px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: left;
   padding: 0.5rem;
 }
 
@@ -194,10 +173,6 @@ aside {
   margin: 60px 30px 10px 10px;
   top: 0;
   right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: right;
 }
 
 aside ul {
@@ -217,29 +192,36 @@ aside ul li {
 }
 
 footer {
-  position: relative;
   color: var(--primary-color);
   background-color: var(--secondary-color);
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  flex-direction: column;
   padding: 20px;
 }
 
 .register,
 .survey {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   flex-direction: column;
-  margin: auto;
+  text-align: center;
+  width: 49%;
+  height: 700px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  /* margin: auto; */
   padding: 0.5rem;
 }
-
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+h3 {
+  display: inline-block;
+}
 select option {
   color: var(--primary-color);
   background-color: var(--secondary-color);
@@ -256,7 +238,6 @@ select option {
   }
 
   header nav {
-    position: relative;
     display: flex;
     flex-direction: column;
   }
@@ -292,6 +273,7 @@ select option {
     border-radius: 5px;
     margin-top: 1em;
   }
+
   .subtitle {
     display: none;
   }
@@ -301,16 +283,11 @@ select option {
   }
 
   .blog {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     max-width: 100%;
   }
 
   main img {
     max-width: 15em;
-    max-height: 20em;
   }
 
   main h1 {
@@ -322,9 +299,17 @@ select option {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .wrapper {
     flex-direction: column;
   }
-  footer h3 {
-    display: block;
+
+  .register,
+  .survey {
+    width: 100%;
+  }
+
+  table {
+    display: none;
   }
 }

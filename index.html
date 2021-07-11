@@ -45,12 +45,7 @@
 
     <main>
       <div class="blog">
-        <img
-          src="img/me.jpg"
-          alt="Oops, you can't see me"
-          style="max-width: 45em; max-height: 30em"
-        />
-        <!-- image style for HTML code only, styled in CSS -->
+        <img src="img/me.jpg" alt="Oops, you can't see me" />
 
         <!-- Today's Post... -->
 
@@ -61,9 +56,7 @@
           <img
             src="img/blog_html.jpg"
             alt="Oops, I'm sure it was an interesting pic..."
-            style="max-width: 45em; max-height: 30em"
           />
-          <!-- image style for HTML code only, styled in CSS -->
 
           <h2 class="todays-post-title">Fabulously Interesting Content...</h2>
           <h5>
@@ -92,9 +85,7 @@
             <img
               src="img/blog_css.jpg"
               alt="Revelant image to whatever I'm babbling about today..."
-              style="max-width: 45em; max-height: 30em"
             />
-            <!-- image style for HTML code only, styled in CSS -->
 
             <br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
@@ -157,9 +148,7 @@
           <img
             src="img/Oak_tree.jpg"
             alt="Oops, I'm sure it was something interesting..."
-            style="max-width: 45em; max-height: 30em"
           />
-          <!-- image style for HTML code only, styled in CSS -->
 
           <h2 class="todays-post-title">Fabulously Interesting Content...</h2>
           <h5>
@@ -181,9 +170,7 @@
             <img
               src="img/Peach_blossom.jpg"
               alt="Revelant image to whatever I'm babbling about today..."
-              style="max-width: 45em; max-height: 30em"
             />
-            <!-- image style for HTML code only, styled in CSS -->
 
             <br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
@@ -208,89 +195,90 @@
           </p>
           <a href="#">...Read More</a>
         </div>
+        <div class="wrapper">
+          <!-- Registration Form... -->
 
-        <!-- Registration Form... -->
+          <div class="register">
+            <form id="new-account">
+              <h3>Create an Account:</h3>
+              <label for="name"><i class="far fa-user-circle"></i></label>
+              <input type="text" id="name" placeholder="What's your name?" />
+              <label for="email"><i class="far fa-envelope-open"></i></label>
+              <input type="email" id="email" placeholder="What's your email?" />
+              <label for="phone"><i class="fas fa-phone"></i></label>
+              <input type="text" id="phone" placeholder="What's your number?" />
+              <label for="gender"><i class="fas fa-venus-mars"></i></label>
+              <select name="gender" id="gender">
+                <option value="Woman">Woman</option>
+                <option value="Man">Man</option>
+                <option value="Non-Binary" selected>Non-Binary</option>
+                <option value="Agendered">Agendered</option>
+                <option value="Fluid">Fluid</option>
+              </select>
+              <label for="password"><i class="fas fa-unlock"></i></label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Create a password..."
+              />
+              <button class="btn">Submit</button>
+            </form>
+          </div>
 
-        <div class="register">
-          <form id="new-account">
-            <h3>Create an Account:</h3>
-            <label for="name"><i class="far fa-user-circle"></i></label>
-            <input type="text" id="name" placeholder="What's your name?" />
-            <label for="email"><i class="far fa-envelope-open"></i></label>
-            <input type="email" id="email" placeholder="What's your email?" />
-            <label for="phone"><i class="fas fa-phone"></i></label>
-            <input type="text" id="phone" placeholder="What's your number?" />
-            <label for="gender"><i class="fas fa-venus-mars"></i></label>
-            <select name="gender" id="gender">
-              <option value="Woman">Woman</option>
-              <option value="Man">Man</option>
-              <option value="Non-Binary" selected>Non-Binary</option>
-              <option value="Agendered">Agendered</option>
-              <option value="Fluid">Fluid</option>
-            </select>
-            <label for="password"><i class="fas fa-unlock"></i></label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Create a password..."
-            />
-            <button class="btn">Submit</button>
-          </form>
-        </div>
+          <!-- Survey Form... -->
 
-        <!-- Survey Form... -->
-
-        <div class="survey">
-          <form id="review">
-            <h3>What Do You Think?:</h3>
-            <p>Do you like our content?</p>
-            <select name="content-rating" id="survey-content">
-              <option value="great">Great!!!!</option>
-              <option value="good">Good!!!</option>
-              <option value="okay">Okay!!</option>
-              <option value="alright">Alright!</option>
-              <option value="meh">Meh</option>
-              <option value="ugh">Ugh</option>
-            </select>
-            <p>Things you like about our site:</p>
-            <input
-              type="checkbox"
-              id="content-chk"
-              name="like-chk"
-              value="content"
-            />
-            <label for="content-chk">Content</label>
-            <input
-              type="checkbox"
-              id="aesthetic-chk"
-              name="like-chk"
-              value="aesthetic"
-            />
-            <label for="aesthetic-chk">Aesthetic</label>
-            <input
-              type="checkbox"
-              id="design-chk"
-              name="like-chk"
-              value="design"
-            />
-            <label for="design-chk">Design</label>
-            <p>Will You Return?</p>
-            <input
-              type="radio"
-              id="returning"
-              name="return"
-              value="returning"
-            />
-            <label for="returning">Absolutely!!!</label>
-            <input
-              type="radio"
-              id="wont-return"
-              name="return"
-              value="wont-return"
-            />
-            <label for="sur-submit">Never Ever!!!</label>
-            <input type="submit" name="submit" id="sur-submit" />
-          </form>
+          <div class="survey">
+            <form id="review">
+              <h3>What Do You Think?:</h3>
+              <p>Do you like our content?</p>
+              <select name="content-rating" id="survey-content">
+                <option value="great">Great!!!!</option>
+                <option value="good">Good!!!</option>
+                <option value="okay">Okay!!</option>
+                <option value="alright">Alright!</option>
+                <option value="meh">Meh</option>
+                <option value="ugh">Ugh</option>
+              </select>
+              <p>Things you like about our site:</p>
+              <input
+                type="checkbox"
+                id="content-chk"
+                name="like-chk"
+                value="content"
+              />
+              <label for="content-chk">Content</label>
+              <input
+                type="checkbox"
+                id="aesthetic-chk"
+                name="like-chk"
+                value="aesthetic"
+              />
+              <label for="aesthetic-chk">Aesthetic</label>
+              <input
+                type="checkbox"
+                id="design-chk"
+                name="like-chk"
+                value="design"
+              />
+              <label for="design-chk">Design</label>
+              <p>Will You Return?</p>
+              <input
+                type="radio"
+                id="returning"
+                name="return"
+                value="returning"
+              />
+              <label for="returning">Absolutely!!!</label>
+              <input
+                type="radio"
+                id="wont-return"
+                name="return"
+                value="wont-return"
+              />
+              <label for="sur-submit">Never Ever!!!</label>
+              <input type="submit" name="submit" id="sur-submit" />
+            </form>
+          </div>
         </div>
       </div>
     </main>
